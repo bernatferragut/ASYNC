@@ -26,7 +26,7 @@ const  questions = [
   }
 ]
 
-// PROMPT RUNNER
+// PROMPT RUNNER ES5
 prompt(questions)
 .then(answer => {
   // NODE: Write answer in JSON 
@@ -44,4 +44,4 @@ prompt(questions)
 })
 .catch(console.error);
 
-
+// PROMPT RUNNER ES7
