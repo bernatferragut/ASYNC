@@ -10,7 +10,7 @@ by creating different Prompt runners with different nodes libraries an putting e
 * Prompt.js
 
 ### REMOTE ADDED
-git remote add origin https://github.com/bernatferragut/ASYNC
-git remote show origin # if everything is ok, you will see your remote
-git push -u origin master # assuming your are on the master branch.
+* git remote add origin https://github.com/bernatferragut/ASYNC
+* git remote show origin # if everything is ok, you will see your remote
+* git push -u origin master # assuming your are on the master branch.
 
