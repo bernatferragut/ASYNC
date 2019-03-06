@@ -5,20 +5,26 @@ let p_content
 
 let questions = [
     {
-        type: 'text',
-        name: 'username',
-        message: 'What is your GitHub username?'
-    },
-    {
         type: 'number',
-        name: 'age',
-        message: 'How old are you?'
+        name: 'hours of sleep',
+        message: 'How many hours did you sleep tonight?',
+        validate: hours => hours < 8 ? 'Today you can not trade buddy' : true,
+        initial: '10'
     },
     {
         type: 'text',
-        name: 'about',
-        message: 'Tell something about yourself',
-        initial: 'Why should I?'
+        name: 'physcial state',
+        message: 'Do you feel rested?',
+        validate: resp => resp == 'no' ? 'Today you can not trade buddy' : true,
+        initial: 'yes or no'
+
+    },
+    {
+        type: 'text',
+        name: 'mental state',
+        message: 'Do you feel focused enough to trade today?',
+        validate: resp => resp == 'no' ? 'Today you can not trade buddy' : true,
+        initial: 'yes or no'
     }
 ];
 
@@ -38,16 +44,6 @@ let questions = [
         })
     }  
 )()
-
-
-/* ASKING QUESTIONS BEFORE TAKING A TRADE
-  1. LOCATION - FIBS
-  2. DIVERGENCE - Contrarian Momentum
-  3. FRACTAL - M,W,H&S
-  4. CANDLES - inner, outer
-  5. ELLIOT WAVES
-  6. RISK REWARD RATIO - Minimum 2.0?
-*/
 
 
 
